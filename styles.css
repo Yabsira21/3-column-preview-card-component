@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+ */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 106vh;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  overflow-y: hidden;
+}
+
+main {
+  display: flex;
+  width: 64%;
+  /* height: 60%; */
+  border-radius: 1rem;
+}
+
+section {
+  flex: 1;
+  padding: 3rem;
+}
+
+section:nth-of-type(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+section:nth-of-type(1) button {
+  color: hsl(31, 77%, 52%);
+}
+
+section:nth-of-type(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+section:nth-of-type(2) button {
+  color: hsl(184, 100%, 22%);
+}
+
+section:nth-of-type(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+section:nth-of-type(3) button {
+  color: hsl(179, 100%, 13%);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+  margin: 1.75rem 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.55rem;
+  margin-bottom: 5.25rem;
+  font-size: 0.95rem;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.95rem 2rem;
+  border-radius: 4rem;
+  border: none;
+  font-size: 0.9rem;
+}
+
+section:nth-of-type(1) button:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+section:nth-of-type(2) button:active {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+section:nth-of-type(3) button:active {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+    margin: 1rem 0;
+    overflow-y: auto;
+  }
+  main {
+    flex-direction: column;
+    width: 90%;
+  }
+  section:nth-of-type(1) {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  section:nth-of-type(3) {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
